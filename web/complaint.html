@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing:border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 7px;
+        color: white;
+        background:linear-gradient(90deg, lightpink, blueviolet);
+        text-align: center;
+        cursor: pointer;
+        width: 20%;
+      }
+.popup{
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1);
+}
+.popup img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popup button{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  border-radius: 3px;
+  
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+   <form method="get" action="Comp">
+
+    <center><h1 style="color:lightpink"><i>COMPLAINT FORM</i></H1></center><br>
+
+<div class="container">
+ 
+    
+        <center><table>
+          
+          <tr>
+             <th>First name : </th>      
+             <th><input type="text" value="" name="txtname" required></th> 
+          </tr>
+          <tr>
+             <th>Last name : </th>
+             <th><input type="text" value="" name="txtlname" required></th>
+          </tr>
+          <tr>
+              <th>Email :</th>
+              <th><input type="text"  id="email" name="email" required></th>
+              </tr>
+          <tr>
+               <th>Phone :</th>
+               <th> <input type="text" name="phone" required> </th>
+          </tr>
+          <tr>  
+             <th>Products Type : </th>
+             <th><input type="text" name="gender" required></th>
+                
+             </tr>
+           
+        </tr>
+          <tr>
+             <th> Communication address :</th>
+             <th> <textarea  name="subject" placeholder="Your Current Address.." required></textarea></th>
+          </tr> 
+          <tr>
+             <th> Complaint Description :</th>
+             <th><textarea  name="description" placeholder="Write something.." style="height:100px" required></textarea></th>
+          </tr>
+          </table><br>
+         
+        <button type="submit" class="button" >Send</button>
+  
+        </form>
+        </div>
+      </body>
+      </html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing:border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+.container1{
+  background-color: white;
+  width: 600px;
+  height: 400px;
+}
+
+</style>
+</head>
+
+<body><center>
+    <form method="get" action="Callall">
+  <div class="container1">
+
+    <center><h1 style="color:lightpink"><i>CALL ALLOCATION FORM</i></H1></center><br>
+      <table>
+          <tr>
+             <th>Employee ID :</th>     
+             <th><input type="text" placeholder="employee id" name="emp" required></th> 
+          </tr>
+          <tr>
+             <th>Employee Name :</th>
+             <th><input type="text" placeholder="employee name" name="empname" required></th>
+          </tr>
+          <tr>
+              <th>Complaint ID :</th>
+              <th><input type="text" placeholder="complaint id" name="comp" required></th>
+              </tr>
+          <tr>
+               <th>Customer Name :</th>
+               <th> <input type="text" placeholder="customer name" name="cust" required> </th>
+          </tr>
+          <tr>
+            <th>Phone number :</th>
+            <th> <input type="text" placeholder="phone number" name="phone" required> </th>
+       </tr>
+       <tr>
+        <th>Product type :</th>
+        <th> <input type="text" placeholder="product" name="product" required> </th>
+   </tr>
+          <tr>
+             <th>Address :</th>
+             <th> <textarea id="subject" placeholder="Your Current Address.." style="height:75px" name="address" required></textarea></th>
+          </tr> 
+         </table><br>
+         <input type="submit" value="Send"/>
+        </form>
+        </div>
+        </center>
+    </body>
+</html>
+

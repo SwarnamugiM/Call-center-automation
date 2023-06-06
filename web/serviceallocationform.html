@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing:border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+
+
+
+.container {
+  border-radius: 3px;
+  
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+    <form method="get" action="Service">
+
+    <center><h1 style="color:lightpink"><i>SERVICE ALLOCATION FORM</i></H1></center><br>
+
+<div class="container">
+
+    
+        <center><table>
+          <tr>
+              <th>Customer ID</th>
+              <th><input type="text"  id="cust" name="custid" placeholder="customer id"></th>
+              </tr>
+          
+          <tr>
+              <th>Email</th>
+              <th><input type="text"  id="email" name="email" placeholder="email"></th>
+              </tr>
+          <tr>
+               <th>Phone</th>
+               <th><input type="text" name="phone" size="10" placeholder="contact number"> </th>
+          </tr>
+          <tr>
+             <th> Communication address</th>
+             <th> <textarea id="subject" name="subject" placeholder="Your Current Address.." style="height:75px"></textarea></th>
+          </tr> 
+          <tr>
+            <th>Call Status</th>
+        <th><select id="status" name="status">
+         <option id="u">NO RESPONSE</OPTION>
+         <option>RESPONSE</option>
+         <option>WRONG NUMBER</OPTION>
+         <option>WAIT FOR A FEW MIN</option>
+         </select></th>
+      </tr>
+          <tr>
+            <th>Service Date</th>
+            <th><input type="date"  name="birthday" style="width:210px"> </th>
+          </tr>
+          <tr>
+            <th>Service Time</th>
+            <th><input type="time"  name="appt" style="width:210px"></th>
+          </tr>
+          <tr>
+            <th>Service Engineer Id</th>
+            <th><select id="service id" name="serviceid">
+                <option id="u">SE01</OPTION>
+                <option>SE02</option>
+                <option>SE07</OPTION>
+                <option>SE08</option>
+                </select></th>
+          </tr>
+          <tr>
+             <th>Service Engineer Name</th>
+             <th><select id="service name" name="servicename">
+                <option>ARUN</option>
+                <option>BALA</option>
+                <option>CHIVA</option>
+                <option>ELANGO</option>
+                <option>FRANKY</option>
+                <option>GURU</option>
+                <option>HARINATH</option>
+
+             </select></th>
+          </tr>
+         </table><br>
+           <input type="submit" value="Send">
+      
+        </form>
+        </div>
+    </body>
+</html>
